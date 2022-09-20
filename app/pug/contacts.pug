@@ -1,0 +1,33 @@
+- var img = 'img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	include blocks/header.pug
+	body
+		.container
+			section.start-page
+				.breadcrumbs
+					a(href="/") Главная
+					p Контакты
+				h1.main-title Контакты
+		section.contacts-page
+			.contacts-page__block
+				.contacts-page__text 
+					h2 Москва, Волгоградский проспект, 121
+					p Контактный телефон
+					a(href="tel:+74997869215") +7 (499) 786-92-15
+					p Электронная почта
+					a(href="mailto:fest@grandkidsfest.ru") fest@grandkidsfest.ru
+					p PR директор фестиваля
+					p.name Лиана Хусаинова
+					a(href="mailto:pr@grandkidsfest.ru") pr@grandkidsfest.ru
+				.contacts-page__map 
+					img.img-d(src=img+"map-desk.png", alt="")
+					img.img-m(src=img+"map-mobile.png", alt="")
+				
+
+
+	include blocks/footer.pug
+	include blocks/scripts.pug

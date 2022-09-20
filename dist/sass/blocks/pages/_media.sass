@@ -1,0 +1,190 @@
+.media-page
+    margin-top: 30px
+    padding-bottom: 150px
+    +mq($max-width: 575px)
+        margin-top: 20px
+        padding-bottom: 100px
+    .select
+        min-width: 55px
+        max-width: 55px
+        margin-bottom: 30px
+        +mq($max-width: 575px)
+            min-width: 45px
+            max-width: 45px
+            margin-bottom: 20px
+    &__tabs
+        display: flex
+        align-items: center
+        gap: 30px
+        margin: 30px auto
+        justify-content: center
+        +mq($max-width: 575px)
+            gap: 0
+            max-width: 100%
+            width: 100%
+            justify-content: space-between
+        button
+            cursor: pointer
+            font-weight: 700
+            font-size: 14px
+            line-height: 18px
+            text-align: center
+            letter-spacing: 0.1em
+            color: #000000
+            height: 32px
+            padding: 0 15px
+            border: 1px solid rgba(0, 0, 0, 0.05)
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05)
+            border-radius: 30px
+            display: flex
+            align-items: center
+            gap: 7px
+            svg
+                transition: all 0.2s ease
+                path
+                    transition: all 0.2s ease
+            &:hover
+                transition: all 0.2s ease
+                background: #65B2E4
+                border: 1px solid #65B2E4
+                color: white
+                svg
+                    transition: all 0.2s ease
+                    path
+                        transition: all 0.2s ease
+                        fill: white
+            +mq($max-width: 575px)
+                padding: 0 10px
+                height: 27px
+                font-size: 10px
+                line-height: 13px
+    .flex
+        gap: 30px
+        flex-wrap: wrap
+        +mq($max-width: 575px)
+            gap: 20px
+    .btn
+        margin: 0 auto
+        margin-top: 100px
+        margin-bottom: 30px
+        border: 1px solid #E50054
+        border-radius: 30px
+        max-width: 183px
+        height: 47px
+        font-weight: 700
+        font-size: 12px
+        line-height: 15px
+        text-align: center
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #000000
+        position: relative
+        &::after
+            transition: all 0.2s ease
+            opacity: 0
+            width: 12px
+            height: 16px
+            position: absolute
+            left: 40px
+            bottom: -16px
+            content: ''
+            background-position: 0 0
+            background-repeat: no-repeat
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxMiAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuOCAxMy42QzEuMjIzMzkgMTQuMzY4OCA3Ljc1NDJlLTA3IDEzLjk2MSA2LjkxNDA2ZS0wNyAxM0wxLjU0OTY4ZS0wNiAwLjk5OTk5NkMxLjUwMTRlLTA2IDAuNDQ3NzEyIDAuNDQ3NzE2IC0yLjgwNDc2ZS0wNiAxIC0yLjg1MzA1ZS0wNkwxMCAtMS43MzI1ZS0wNkMxMC44MjQgLTEuODA0NTRlLTA2IDExLjI5NDQgMC45NDA3NjIgMTAuOCAxLjZMMS44IDEzLjZaIiBmaWxsPSIjRTUwMDU0Ii8+Cjwvc3ZnPgo=')
+        &:hover
+            background: #E50054
+            color: white
+        +mq($max-width: 575px)
+            margin-top: 50px
+            margin-bottom: 20px
+            max-width: 138px
+            height: 37px
+            font-size: 10px
+            line-height: 13px
+
+    &__item
+        background: #FFFFFF
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05)
+        border-radius: 30px
+        max-width: 393px
+        display: flex
+        flex-direction: column
+        min-height: 505px
+        position: relative
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05)
+        &:hover
+            transition: all 0.2s ease
+            background: linear-gradient(270deg, rgba(45, 122, 191, 0.6) 0%, rgba(101, 178, 228, 0) 100%), linear-gradient(0deg, #65B2E4, #65B2E4)
+            +mq($max-width: 575px)
+                background: white
+            p
+                transition: all 0.2s ease
+                color: white
+                +mq($max-width: 575px)
+                    color: black
+        &::after
+            content: ''
+            position: absolute
+            left: 0
+            top: -1px
+            background: white
+            height: 280px
+            width: 100%
+            border-radius: 30px
+        +mq($min-width: 1800px)
+            max-width: 357px
+        +mq($max-width: 575px)
+            max-width: calc( (100vw - 60px) / 2 )
+            min-height: 271px
+            &::after
+                content: none
+    &__date
+        display: flex
+        align-items: center
+        justify-content: center
+        font-weight: 700
+        font-size: 14px
+        line-height: 18px
+        text-align: center
+        letter-spacing: 0.1em
+        color: #000000
+        height: 32px
+        padding: 0 15px
+        border: 1px solid rgba(0, 0, 0, 0.05)
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05)
+        border-radius: 30px
+        max-width: max-content
+        gap: 7px
+        margin: 0 auto
+        margin-bottom: 27px
+        background: white
+        +mq($max-width: 575px)
+            padding: 0 8px
+            height: 23px
+            font-size: 10px
+            line-height: 13px
+            gap: 5px
+            margin-left: 10px
+            margin-bottom: 20px
+            margin-top: 0px
+    &__item p
+        font-family: 'BebasNeue'
+        font-weight: 700
+        font-size: 26px
+        line-height: 110%
+        padding: 0 30px 40px 30px
+        transition: all 0.2s ease
+        +mq($max-width: 575px)
+            font-size: 16px
+            padding: 0 10px
+    &__item img
+        width: 100%
+        height: auto
+        margin-bottom: 20px
+        position: relative
+        z-index: 2
+        +mq($max-width: 575px)
+            height: 100px
+            object-fit: cover
+            margin-bottom: 10px
+            border-radius: 30px 30px 0 0

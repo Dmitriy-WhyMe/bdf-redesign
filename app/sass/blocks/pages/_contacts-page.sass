@@ -1,0 +1,74 @@
+.contacts-page
+    padding-bottom: 150px
+    margin-top: 70px
+    +mq($max-width: 575px)
+        margin-top: 30px
+        padding-bottom: 0px
+    &__block
+        position: relative
+    &__map
+        img
+            width: 100%
+        .img-m
+            display: none
+            +mq($max-width: 575px)
+                display: block
+        .img-d
+            +mq($max-width: 575px)
+                display: none
+    &__text
+        position: absolute
+        background: #FFFFFF
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05)
+        border-radius: 30px
+        right: calc( (100vw - 1240px) / 2 )
+        top: -40px
+        padding: 60px
+        max-width: 399px
+        +mq($min-width: 1800px)
+            right: calc( (100vw - 1518px) / 2 )
+        +mq($max-width: 575px)
+            position: static
+            background: none
+            box-shadow: none
+            padding: 0 20px
+            padding-bottom: 30px
+            max-width: 100%
+        h2
+            font-family: 'Hagrid'
+            font-style: normal
+            font-weight: 500
+            font-size: 31px
+            line-height: 130%
+            color: #000000
+            margin-bottom: 30px
+            +mq($max-width: 575px)
+                font-size: 17px
+                margin: 0 auto
+                margin-bottom: 20px
+                text-align: center
+                max-width: 250px
+        p
+            font-family: 'Mont'
+            font-style: normal
+            font-weight: 800
+            font-size: 14px
+            line-height: 18px
+            letter-spacing: 0.1em
+            color: #000000
+            margin-bottom: 5px
+            +mq($max-width: 575px)
+                font-size: 10px
+                line-height: 13px
+                margin-bottom: 10px
+        p.name
+            font-weight: 500
+        a
+            font-weight: 600
+            font-size: 18px
+            line-height: 130%
+            margin-bottom: 30px
+            color: #A90B48
+            +mq($max-width: 575px)
+                font-size: 14px
+                margin-bottom: 20px

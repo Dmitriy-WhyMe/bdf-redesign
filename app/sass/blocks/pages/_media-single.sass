@@ -1,0 +1,154 @@
+.media-single
+    margin: 0 auto
+    margin-top: 20px
+    margin-bottom: 150px
+    max-width: 1028px
+    width: 100%
+    +mq($max-width: 575px)
+        margin-bottom: 50px
+        margin-top: 20px
+    .container-small
+        max-width: 816px
+        width: 100%
+        margin: 0 auto
+    .tass
+        font-family: 'BebasNeue'
+        font-style: normal
+        font-weight: 700
+        font-size: 26px
+        line-height: 110%
+        text-align: center
+        color: #000000
+        margin: auto
+        margin-bottom: 40px
+        +mq($max-width: 575px)
+            margin-bottom: 30px
+            font-size: 16px
+    p
+        font-weight: 600
+        font-size: 18px
+        line-height: 130%
+        color: #000000
+        margin-bottom: 10px
+        +mq($max-width: 575px)
+            font-size: 14px
+    p.bold
+        font-family: 'Hagrid'
+        font-style: normal
+        font-weight: 500
+        font-size: 22px
+        line-height: 130%
+        color: #000000
+        margin-top: 30px
+        margin-bottom: 30px
+        +mq($max-width: 575px)
+            font-size: 16px
+    p.bold-dop
+        margin-bottom: 20px
+        font-weight: 700
+        font-size: 18px
+        line-height: 130%
+        color: #000000
+        +mq($max-width: 575px)
+            font-size: 14px
+            margin-bottom: 10px
+    .imgs
+        margin-top: 50px
+        +mq($max-width: 575px)
+            margin-top: 30px
+    img
+        margin-bottom: 30px
+        width: 100%
+        border-radius: 30px
+        +mq($max-width: 575px)
+            margin-bottom: 20px
+            border-radius: 20px
+    h4
+        font-family: 'BebasNeue'
+        font-style: normal
+        font-weight: 700
+        font-size: 26px
+        line-height: 110%
+        color: #000000
+        margin-top: 50px
+        margin-bottom: 30px
+        +mq($max-width: 575px)
+            margin-top: 30px
+            font-size: 16px
+            margin-bottom: 10px
+    ul
+        margin-bottom: 50px
+        +mq($max-width: 575px)
+            margin-bottom: 30px
+        li
+            max-width: 711px
+            font-weight: 500
+            font-size: 18px
+            line-height: 130%
+            color: #000000
+            margin-bottom: 20px
+            +mq($max-width: 575px)
+                font-size: 14px
+                margin-bottom: 10px
+            a
+                display: inline
+                color: #2D7ABF
+                text-decoration: underline
+                transition: all 0.2s ease
+                &:hover
+                    text-decoration: none
+    &__gallery
+        margin-bottom: 150px
+        display: flex
+        flex-wrap: wrap
+        gap: 30px
+        +mq($max-width: 575px)
+            margin-bottom: 100px
+            gap: 20px
+        img
+            width: 100%
+            max-width: 31.7%
+            border-radius: 30px
+            +mq($max-width: 575px)
+                border-radius: 20px
+                max-width: 47.3%
+    &__video
+        position: relative
+        margin-top: 50px
+        +mq($max-width: 575px)
+            margin-top: 30px
+        button
+            position: absolute
+            left: 0
+            right: 0
+            top: 0
+            bottom: 0
+            margin: auto
+            cursor: pointer
+        img
+            margin-bottom: 0
+            +mq($max-width: 575px)
+                height: 217px
+                object-fit: cover
+    a.btn
+        margin: 70px auto
+        border: 1px solid #E50054
+        border-radius: 30px
+        max-width: 300px
+        height: 47px
+        font-weight: 700
+        font-size: 12px
+        line-height: 15px
+        text-align: center
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #000000
+        +mq($max-width: 575px)
+            margin: 50px auto
+            max-width: 235px
+            height: 37px
+            font-size: 10px
+            line-height: 13px
+        &:hover
+            background: $main
+            color: white

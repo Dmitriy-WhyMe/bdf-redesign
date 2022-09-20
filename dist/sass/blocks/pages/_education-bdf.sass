@@ -1,0 +1,33 @@
+.education-bdf
+    .container
+        +mq($max-width: 575px)
+            padding: 0
+    &__img
+        margin-top: 70px
+        position: relative
+        max-width: 393px
+        border-radius: 30px
+        +mq($min-width: 1800px)
+            max-width: 486px
+        +mq($max-width: 575px)
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05)
+            border-radius: 20px
+            margin-top: 50px
+        h4
+            position: absolute
+            left: 0
+            right: 0
+            bottom: 30px
+            margin: auto
+            font-family: 'Hagrid'
+            font-style: normal
+            font-weight: 500
+            font-size: 22px
+            line-height: 130%
+            text-align: center
+            color: white
+            +mq($max-width: 575px)
+                font-size: 16px
+
+        img
+            width: 100%

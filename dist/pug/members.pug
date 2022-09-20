@@ -1,0 +1,68 @@
+- var img = 'img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	include blocks/header.pug
+	body
+		.container
+			section.start-page
+				.breadcrumbs
+					a(href="/") Главная
+					p Участники
+				h1.main-title Участники конкурса
+			section.members 
+				.members__tabs
+					button Все
+					button Спектакли
+					button Анимация
+					button Кино
+					button Книги
+				.flex 
+					a(href="#").members__item 
+						h3 Жили-плыли пираты. Диктант с продолжением
+						.members__img 
+							img(src=img+"members-item-1.png", alt="")
+						.members__logo
+							img(src=img+"members-item--logo-1.png", alt="")
+						p Александр Киселёв. НИГМА, 2022
+					a(href="#").members__item 
+						h3 Звёздочка для ёжика
+						.members__img 
+							img(src=img+"members-item-2.png", alt="")
+						.members__logo
+							img(src=img+"members-item--logo-2.png", alt="")
+						p Астраханский театр кукол
+					a(href="#").members__item 
+						h3 Зови меня Дрозд
+						.members__img 
+							img(src=img+"members-item-3.png", alt="")
+						.members__logo
+							
+						p Режиссер Павел Мирзоев
+					a(href="#").members__item 
+						h3 Золотой дворец
+						.members__img 
+							img(src=img+"members-item-4.png", alt="")
+						.members__logo
+							img(src=img+"members-item--logo-4.png", alt="")
+						p Реж. Рим Шарафутдинов, киностудия «Башкортостан»
+					a(href="#").members__item 
+						h3 Иваново детство
+						.members__img 
+							img(src=img+"members-item-5.png", alt="")
+						.members__logo
+							img(src=img+"members-item--logo-5.png", alt="")
+						p Казанский ТЮЗ
+					a(href="#").members__item 
+						h3 Индиго с мармеладной улицы
+						.members__img 
+							img(src=img+"members-item-6.png", alt="")
+						.members__logo
+							img(src=img+"members-item--logo-6.png", alt="")
+						p Пиппа Карник. МИФ, 2022
+			
+
+	include blocks/footer.pug
+	include blocks/scripts.pug
