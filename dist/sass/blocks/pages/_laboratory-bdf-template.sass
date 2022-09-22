@@ -1,0 +1,130 @@
+.laboratory-bdf-template
+    .container-small
+        h2
+            font-family: 'Hagrid'
+            font-style: normal
+            font-weight: 500
+            font-size: 22px
+            line-height: 130%
+            text-align: center
+            margin-bottom: 40px
+            +mq($max-width: 575px)
+                margin-bottom: 30px
+                font-size: 14px
+        p
+            margin-bottom: 10px
+            a
+                color: #2D7ABF
+                font-weight: 700
+    .group-30
+        margin-top: 50px
+        .container-small
+            display: flex
+            flex-direction: column
+            gap: 30px
+            +mq($max-width: 575px)
+                gap: 20px
+    &__block
+        margin-top: 100px
+        +mq($max-width: 575px)
+            margin-top: 70px
+        a
+            color: #2D7ABF
+            font-weight: 700
+            font-family: 'Mont'
+
+    &__content
+        margin-top: 50px
+
+    &__group
+        margin-top: 70px
+        position: relative
+        +mq($max-width: 575px)
+            margin-top: 50px
+
+        .container-small
+            display: flex
+            flex-direction: column
+            gap: 60px
+            +mq($max-width: 575px)
+                gap: 20px
+        h2
+            position: absolute
+            max-width: 182px
+            left: calc((100vw - 1240px) / 2)
+            top: 0
+            font-family: 'Hagrid'
+            font-style: normal
+            font-weight: 500
+            font-size: 22px
+            line-height: 130%
+            +mq($min-width: 1800px)
+                left: calc((100vw - 1518px) / 2)
+            +mq($max-width: 575px)
+                max-width: 100%
+                position: initial
+                text-align: center
+                margin-bottom: 20px
+                font-size: 17px
+    &__item
+        display: flex
+        gap: 30px
+        border: 1px solid #2D7ABF
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05)
+        border-radius: 30px
+        padding: 30px
+        +mq($max-width: 575px)
+            border-radius: 20px
+            padding: 20px
+            gap: 20px
+            flex-direction: column
+    &__main
+        h4
+            font-family: 'Hagrid'
+            font-style: normal
+            font-weight: 500
+            font-size: 22px
+            line-height: 130%
+            +mq($max-width: 575px)
+                font-size: 14px
+        a
+            margin-top: 20px
+            margin-bottom: 40px
+            +mq($max-width: 575px)
+                margin-bottom: 30px
+                height: 37px
+    &__imgs
+        display: flex
+        flex-direction: column
+        gap: 20px
+        min-width: 226px
+        +mq($max-width: 575px)
+            flex-direction: row
+            min-width: auto
+            gap: 1px
+    &__img
+        max-width: 226px
+        height: 226px
+        position: relative
+        +mq($max-width: 575px)
+            max-width: 49%
+            height: auto
+        img
+            width: 100%
+            object-fit: cover
+            border-radius: 30px
+            +mq($max-width: 575px)
+                border-radius: 20px
+
+        p
+            position: absolute
+            font-family: 'BebasNeue'
+            font-style: normal
+            font-weight: 700
+            font-size: 26px
+            line-height: 110%
+            left: 10px
+            bottom: 10px
+            color: #FFFFFF
+            +mq($max-width: 575px)
+                font-size: 16px

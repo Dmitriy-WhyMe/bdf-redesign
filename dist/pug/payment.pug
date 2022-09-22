@@ -1,0 +1,55 @@
+- var img = 'img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	include blocks/header.pug
+	body
+		.container
+			section.start-page
+				.breadcrumbs
+					a(href="/") Главная
+					p Доброкасса
+				h1.main-title Доброкасса
+		section.small-page-template
+			.container
+				.small-page-template__payment 
+					.small-page-template__left 
+						h3 Друзья!
+						p.m-top-20 Вы можете посмотреть все проекты фестиваля безвозмездно, но у вас есть возможность поддержать наш большой проект и внести свой вклад в дальнейшее развитие Большого Детского фестиваля — переведите любую сумму на поддержку фестиваля, а мы постараемся и впредь радовать вас интересными проектами!
+						p.m-top-10 
+							b Искренне благодарим за ваше внимание к нашему фестивалю!
+						p.m-top-10 
+							b Мира, добра, здоровья! Мы работаем для вас и ваших детей!
+						a.btn(href="#" class="default-btn") реквизиты
+					.small-page-template__form 
+						form(action="") 
+							h4 Внесите свой вклад уже сейчас
+							label(for="") Фамилия Имя Отчество*
+							input(type="text") 
+							label(for="") Электронная почта*
+							input(type="text") 
+							label(for="") Сумма пожертвования*
+							input(type="text" placeholder="Не менее 300₽") 
+							.small-page-template__checkboxs
+								label.checkbox
+									input(type="checkbox")
+									p Я согласен на обработку персональных данных*
+								label.checkbox
+									input(type="checkbox")
+									p Я согласен с договором оферты*
+								label.checkbox
+									input(type="checkbox")
+									p Я согласен получать рассылку новостей фестиваля
+								label.checkbox
+									input(type="checkbox")
+									p Я согласен, чтобы мое ФИО было размещено на странице благодарности
+							button.btn поддержать фестиваль
+							p 
+								b поля отмеченные * обязательные к заполнению
+
+
+
+	include blocks/footer.pug
+	include blocks/scripts.pug

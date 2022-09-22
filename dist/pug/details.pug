@@ -1,0 +1,41 @@
+- var img = 'img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	include blocks/header.pug
+	body
+		.container
+			section.start-page
+				.breadcrumbs
+					a(href="/") Главная
+					p Реквизиты
+				h1.main-title Реквизиты
+		section.small-page-template
+			.container
+				.small-page-template__details 
+					h2 Фонд Сергея Безрукова
+					p Местонахождение: 109125, г. Москва, ул. Окская, д. 4, корп.1, кв. 110
+					p.m-top-20 Почтовый адрес: 109125, г. Москва, ул. Окская, д. 4, корп.1, кв. 110
+					.small-page-template__details-block
+						p ИНН: 7721491372
+						p.m-top-10 КПП: 772101001
+						p.m-top-10 ОГРН: 1137799015804
+						p.m-top-10 ОКТМО: 45387000
+						p.m-top-10 ОКОПФ: 70400
+					p <b>Телефон: </b>
+						a(href="tel:+74953782947") +7 (495) 378-29-47
+					p <b>E-mail: </b>
+						a(href="mailto:basova@fondbezrukova.ru") basova@fondbezrukova.ru
+					.small-page-template__details-bank
+						p
+							b Банковские реквизиты
+						p.m-top-10 р/с 40703810138120000667
+						p.m-top-10 в ПАО «СБЕРБАНК РОССИИ» г. Москва
+						p.m-top-10 к/с 30101810400000000225
+						p.m-top-10 БИК 044525225
+
+
+	include blocks/footer.pug
+	include blocks/scripts.pug
