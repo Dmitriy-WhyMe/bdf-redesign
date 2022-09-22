@@ -1,7 +1,7 @@
 - var img = 'img/';
 
 doctype
-html
+html.dop-footer
 	include blocks/head.pug
 		title
 	include blocks/header.pug
@@ -9,8 +9,8 @@ html
 		.perfomance-panel 
 			.container
 				.perfomance-panel__text 
-					p Мюзикл В. Качесова. 2 октября 12:00
-					h5 Гуси-Лебеди
+					p Мюзикл В. Качесова. 2 октября 19:00 / 20:00 / 21:00
+					h5 Гуси-Лебеди Гуси-Лебеди Гуси-Лебеди
 				a.btn(href="#") купить билет
 		.container
 			section.start-page
@@ -27,7 +27,10 @@ html
 						p 12+
 					.flex 
 						p Участник программы «Пушкинская карта»
-						img(src=img+"push.png", alt="")
+						.hint
+							.hint__block
+								p Участник программы «Пушкинская карта»
+							img(src=img+"push.png", alt="")
 					p.bold Жанр
 					p Мистерия
 					p.bold Площадка
@@ -62,7 +65,10 @@ html
 						.perfomance-mobile
 							.flex 
 								p Участник программы «Пушкинская карта»
-								img(src=img+"push.png", alt="")
+								.hint
+									.hint__block
+										p Участник программы «Пушкинская карта»
+									img(src=img+"push.png", alt="")
 							p.bold Жанр
 							p Мистерия
 							p.bold Площадка
@@ -85,8 +91,8 @@ html
 							p 500
 					h3.perfomance-main__dop-title Прямая трансляция Церемонии открытия IV Международного Большого Детского фестиваля
 					.perfomance-main__video 
-						img(src=img+"video.png", alt="")
-						button <svg width="84" height="60" viewBox="0 0 84 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.5" d="M83.1144 12.9333C83.1144 12.9333 82.2944 7.06667 79.7688 4.46667C76.5873 1.06667 73.0121 1.06667 71.3393 0.866667C59.6302 0 42.0164 0 42.0164 0H41.9836C41.9836 0 24.3702 0 12.5951 0.866667C10.9551 1.06667 7.37986 1.06667 4.16555 4.46667C1.67278 7.06667 0.852797 12.9333 0.852797 12.9333C0.852797 12.9333 0 19.8667 0 26.7667V33.2333C0 40.1333 0.852797 47.0333 0.852797 47.0333C0.852797 47.0333 1.67278 52.9 4.19836 55.5C7.37986 58.9 11.5782 58.8 13.4479 59.1333C20.1718 59.8 41.9836 60 41.9836 60C41.9836 60 59.6298 59.9667 71.3721 59.1C73.0121 58.9 76.5873 58.9 79.8016 55.5C82.3272 52.9 83.1472 47.0333 83.1472 47.0333C83.1472 47.0333 84 40.1333 84 33.2333V26.7667C83.9672 19.8667 83.1144 12.9333 83.1144 12.9333Z" fill="#E50054"/><path d="M33.5999 40.8L56.3999 29.4L33.5999 18V40.8Z" fill="white"/><path opacity="0.2" d="M33.5999 18L52.7999 31.2L56.3999 29.4L33.5999 18Z" fill="black"/></svg>
+						<iframe src="https://rutube.ru/play/embed/41ac3e896de976d4eadc8115bd75eae2" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>  
+						//button <svg width="84" height="60" viewBox="0 0 84 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.5" d="M83.1144 12.9333C83.1144 12.9333 82.2944 7.06667 79.7688 4.46667C76.5873 1.06667 73.0121 1.06667 71.3393 0.866667C59.6302 0 42.0164 0 42.0164 0H41.9836C41.9836 0 24.3702 0 12.5951 0.866667C10.9551 1.06667 7.37986 1.06667 4.16555 4.46667C1.67278 7.06667 0.852797 12.9333 0.852797 12.9333C0.852797 12.9333 0 19.8667 0 26.7667V33.2333C0 40.1333 0.852797 47.0333 0.852797 47.0333C0.852797 47.0333 1.67278 52.9 4.19836 55.5C7.37986 58.9 11.5782 58.8 13.4479 59.1333C20.1718 59.8 41.9836 60 41.9836 60C41.9836 60 59.6298 59.9667 71.3721 59.1C73.0121 58.9 76.5873 58.9 79.8016 55.5C82.3272 52.9 83.1472 47.0333 83.1472 47.0333C83.1472 47.0333 84 40.1333 84 33.2333V26.7667C83.9672 19.8667 83.1144 12.9333 83.1144 12.9333Z" fill="#E50054"/><path d="M33.5999 40.8L56.3999 29.4L33.5999 18V40.8Z" fill="white"/><path opacity="0.2" d="M33.5999 18L52.7999 31.2L56.3999 29.4L33.5999 18Z" fill="black"/></svg>
 					.perfomance-main__custom-title 
 						<svg class="perfomance-main__title-1440" width="817" height="98" viewBox="0 0 817 98" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M561.527 3.31022C678.943 0.713855 754.461 4.97433 792.785 9.10665C806.959 10.635 817 22.7679 817 37.0244V63.3135C817 77.6776 806.807 89.8946 792.523 91.4076C753.575 95.533 677.5 99.8096 561.527 97.2035C374.818 93.0079 351.974 93.8979 209.553 95.1057C124.303 95.8287 61.8372 93.0616 26.413 90.4685C11.3024 89.3624 0 76.6671 0 61.516V37.9024C0 23.2545 10.5632 10.7262 25.1144 9.04638C84.4898 2.19218 169.711 0.133263 209.553 0.00456697C273.421 -0.20174 409.735 6.66673 561.527 3.31022Z" fill="#65B2E4"/></svg>
 						<svg class="perfomance-main__title-1920" width="1003" height="98" viewBox="0 0 1003 98" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M689.366 3.31022C838.304 0.627555 932.329 5.26513 977.813 9.51803C992.419 10.8838 1003 23.2829 1003 37.953V62.4208C1003 77.1803 992.291 89.6462 977.594 90.9946C931.325 95.2393 836.501 99.8967 689.366 97.2035C460.15 93.0079 432.106 93.8979 257.26 95.1057C148.147 95.8595 69.4379 92.8197 27.054 90.1386C11.6754 89.1658 6.10352e-05 76.3166 6.10352e-05 60.9072V38.6971C6.10352e-05 23.7026 11.0414 10.9935 25.963 9.51615C98.9908 2.28576 207.247 0.136158 257.26 0.00456697C335.669 -0.20174 503.017 6.66673 689.366 3.31022Z" fill="#65B2E4"/></svg>
@@ -131,11 +137,14 @@ html
 						.swiper-container(class="mySwiper-5")
 							.swiper-wrapper
 								.perfomance-slide(class="swiper-slide")
-									img(src=img+"perfomance-slide-1.png", alt="")
+									a(data-fancybox="gallery3" href=img+"perfomance-slide-1.png") 
+										img(src=img+"perfomance-slide-1.png", alt="")
 								.perfomance-slide(class="swiper-slide")
-									img(src=img+"perfomance-slide-2.png", alt="")
+									a(data-fancybox="gallery2" href=img+"perfomance-slide-2.png") 
+										img(src=img+"perfomance-slide-2.png", alt="")
 								.perfomance-slide(class="swiper-slide")
-									img(src=img+"perfomance-slide-1.png", alt="")
+									a(data-fancybox="gallery2" href=img+"perfomance-slide-1.png") 
+										img(src=img+"perfomance-slide-1.png", alt="")
 					.btns-slider
 						button.btn(class="swiper-button-prev-5") <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.0001 14.7059L4.36861 8.5L11.0001 2.29407L8.81588 0.25L0.000122663 8.5L8.81588 16.75L11.0001 14.7059Z" fill="white"/></svg>
 						button.btn(class="swiper-button-next-5") <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.000122702 14.7059L6.63164 8.5L0.00012216 2.29407L2.18437 0.25L11.0001 8.5L2.18437 16.75L0.000122702 14.7059Z" fill="white"/></svg>

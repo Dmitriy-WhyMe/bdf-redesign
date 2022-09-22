@@ -1,3 +1,7 @@
+.news-single-page
+    >.breadcrumbs
+        top: -30px
+
 .news-single
     margin: 0 auto
     margin-top: 40px
@@ -19,17 +23,7 @@
         margin-bottom: 10px
         +mq($max-width: 575px)
             font-size: 14px
-    p.bold
-        font-family: 'Hagrid'
-        font-style: normal
-        font-weight: 500
-        font-size: 22px
-        line-height: 130%
-        color: #000000
-        margin-top: 30px
-        margin-bottom: 30px
-        +mq($max-width: 575px)
-            font-size: 16px
+
     .imgs
         margin-top: 50px
         +mq($max-width: 575px)
@@ -77,6 +71,14 @@
                     text-decoration: none
     &__video
         position: relative
+        max-width: 100%
+        height: 570px
+        iframe
+            width: 100%
+            height: 100%
+            border-radius: 30px
+            +mq($max-width: 575px)
+                border-radius: 20px
         button
             position: absolute
             left: 0

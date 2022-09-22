@@ -58,6 +58,16 @@
                 height: 27px
                 font-size: 10px
                 line-height: 13px
+        .active
+            transition: all 0.2s ease
+            background: #65B2E4
+            border: 1px solid #65B2E4
+            color: white
+            svg
+                transition: all 0.2s ease
+                path
+                    transition: all 0.2s ease
+                    fill: white
     .flex
         gap: 30px
         flex-wrap: wrap
@@ -131,8 +141,11 @@
             height: 280px
             width: 100%
             border-radius: 30px
+            +mq($min-width: 1800px)
+                height: 250px
         +mq($min-width: 1800px)
             max-width: 357px
+            height: 250px
         +mq($max-width: 575px)
             max-width: calc( (100vw - 60px) / 2 )
             min-height: 271px

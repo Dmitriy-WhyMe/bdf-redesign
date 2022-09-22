@@ -58,8 +58,8 @@
         min-height: 505px
         position: relative
         box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05)
+        transition: all 0.2s ease
         &:hover
-            transition: all 0.2s ease
             background: linear-gradient(270deg, rgba(45, 122, 191, 0.6) 0%, rgba(101, 178, 228, 0) 100%), linear-gradient(0deg, #65B2E4, #65B2E4)
             +mq($max-width: 575px)
                 background: white
@@ -77,6 +77,8 @@
             height: 280px
             width: 100%
             border-radius: 30px
+            +mq($min-width: 1800px)
+                height: 250px
         +mq($min-width: 1800px)
             max-width: 357px
         +mq($max-width: 575px)

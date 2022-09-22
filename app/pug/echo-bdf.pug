@@ -1,0 +1,67 @@
+- var img = 'img/';
+
+doctype
+html
+	include blocks/head.pug
+		title
+	include blocks/header.pug
+	body
+		.container
+			section.start-page
+				.breadcrumbs
+					a(href="/") Главная
+					p ЭХО БДФ
+				h1.main-title ЭХО БДФ
+		section.echo-bdf
+			.container-small 
+				img(src=img+"main-echo.png", alt="")
+				p «ЭХО БДФ» - специальная программа Большого Детского фестиваля, в рамках которой на площадках театров разных регионов страны проходят показы лучших спектаклей, кино- и анимационных фильмов для детей и юношества, ставших лауреатами Большого Детского фестиваля. Также проводятся спецпроекты БДФ: питчинг проектов для детей и юношества, лаборатория для молодых режиссеров, образовательная программа для профессионалов театра и образовательный проект для учащихся детских театральных студий.
+				p.m-top-10 Художественный руководитель фестиваля Сергей Безруков отмечает, что идея создать специальную программу Большого Детского фестиваля «ЭХО БДФ» пришла давно, но из-за пандемии реализовать ее впервые удалось только в 2021 году:
+				p.m-top-10 
+					b «Как правило, все самое лучшее показывается в Москве и Санкт-Петербурге, и зрители из отдаленных регионов часто говорят, что им тоже хотелось бы посмотреть лучшие театральные постановки и фильмы, которые отбираются экспертным советом и жюри нашего фестиваля, - отметил Безруков. - И у меня возникла идея сделать «эхо» фестиваля – показать зрителям в регионах наших победителей, лучшие работы разных направлений. В 2021 году мы реализовали эту идею в Севастополе и в Калининграде. В следующем году «ЭХО БДФ» отправится в другой город, регион. Наш фестиваль – мультижанровый, в программе и театр, и кино, и анимация, и лаборатории, и образовательная программа. Отдельно выделю питчинги – презентации проектов будущих спектаклей для детей, которые рассматриваются продюсерами, директорами театров на предмет постановки в своих коллективах».
+				p.m-top-10 Большой Детский фестиваль проводится с 2018 года в рамках реализации федерального партийного проекта «Культура малой Родины», художественный руководитель фестиваля – народный артист России Сергей Безруков. Идея фестиваля – собрать лучшее, что делается для детей и юношества в самых различных жанрах перформативного искусства. А лауреатов фестиваля выбирает детское жюри – дети и подростки от 6 до 16 лет. Фестиваль проводится при поддержке Президентского фонда культурных инициатив, Министерства культуры Российской Федерации и Министерства культуры и туризма Московской области. Организаторы фестиваля – Фонд поддержки и развития социокультурных проектов Сергея Безрукова, Московский Губернский театр.
+			.container 
+				h2 Архив
+				.flex 
+					.echo-bdf__col
+						img.echo-bdf__img-logo(src=img+"echo-logo-1.png", alt="")
+						.echo-bdf__slider
+							.swiper-container(class="mySwiper-8")
+								.btns-slider
+									button.btn(class="swiper-button-prev-8") <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.0001 14.7059L4.36861 8.5L11.0001 2.29407L8.81588 0.25L0.000122663 8.5L8.81588 16.75L11.0001 14.7059Z" fill="white"/></svg>
+									button.btn(class="swiper-button-next-8") <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.000122702 14.7059L6.63164 8.5L0.00012216 2.29407L2.18437 0.25L11.0001 8.5L2.18437 16.75L0.000122702 14.7059Z" fill="white"/></svg>
+								.swiper-wrapper
+									.echo-bdf-slide(class="swiper-slide")
+										img(src=img+"echo-1.png", alt="")
+									.echo-bdf-slide(class="swiper-slide")
+										img(src=img+"echo-1.png", alt="")
+					.echo-bdf__col
+						img.echo-bdf__img-logo(src=img+"echo-logo-2.png", alt="")
+						.echo-bdf__slider
+							.swiper-container(class="mySwiper-9")
+								.btns-slider
+									button.btn(class="swiper-button-prev-9") <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.0001 14.7059L4.36861 8.5L11.0001 2.29407L8.81588 0.25L0.000122663 8.5L8.81588 16.75L11.0001 14.7059Z" fill="white"/></svg>
+									button.btn(class="swiper-button-next-9") <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.000122702 14.7059L6.63164 8.5L0.00012216 2.29407L2.18437 0.25L11.0001 8.5L2.18437 16.75L0.000122702 14.7059Z" fill="white"/></svg>
+								.swiper-wrapper
+									.echo-bdf-slide(class="swiper-slide")
+										img(src=img+"echo-2.png", alt="")
+									.echo-bdf-slide(class="swiper-slide")
+										img(src=img+"echo-2.png", alt="")
+					.echo-bdf__col
+						img.echo-bdf__img-logo(src=img+"echo-logo-3.png", alt="")
+						.echo-bdf__slider
+							.swiper-container(class="mySwiper-10")
+								.btns-slider
+									button.btn(class="swiper-button-prev-10") <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.0001 14.7059L4.36861 8.5L11.0001 2.29407L8.81588 0.25L0.000122663 8.5L8.81588 16.75L11.0001 14.7059Z" fill="white"/></svg>
+									button.btn(class="swiper-button-next-10") <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.000122702 14.7059L6.63164 8.5L0.00012216 2.29407L2.18437 0.25L11.0001 8.5L2.18437 16.75L0.000122702 14.7059Z" fill="white"/></svg>
+								.swiper-wrapper
+									.echo-bdf-slide(class="swiper-slide")
+										img(src=img+"echo-3.png", alt="")
+									.echo-bdf-slide(class="swiper-slide")
+										img(src=img+"echo-3.png", alt="")
+					.echo-bdf__col
+						img.echo-bdf__img-logo(src=img+"echo-logo-4.png", alt="" class="echo-bdf__img-dop")
+				
+
+	include blocks/footer.pug
+	include blocks/scripts.pug

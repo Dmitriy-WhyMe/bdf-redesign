@@ -30,6 +30,8 @@
             left: 70px
         +mq($max-width: 1400px)
             width: 395px
+        +mq($max-width: 1300px)
+            width: 345px
         +mq($max-width: 767px)
             content: none
     &::after
@@ -73,6 +75,10 @@
         max-width: 167px
         margin-right: 20px
         height: 32.9px
+        position: absolute
+        left: 40px
+        +mq($min-width: 1800px)
+            left: calc((100vw - 1518px)/2)
         +mq($max-width: 767px)
             display: none
             z-index: 22
@@ -93,14 +99,18 @@
             z-index: 21
 
     &__language
-        position: relative
+        position: absolute
+        left: 250px
         z-index: 3
         display: flex
         align-items: center
         gap: 7px
         margin-right: 40px
         +mq($min-width: 1800px)
+            left: 430px
             margin-right: 80px
+        +mq($max-width: 1300px)
+            left: 195px
         +mq($max-width: 767px)
             display: none
         button
@@ -108,12 +118,32 @@
             font-size: 16px
             line-height: 20px
             cursor: pointer
-    &__language-en
-        color: #65B2E4
+            transition: all 0.2s ease
+            position: relative
+            &::after
+                position: absolute
+                left: 0
+                bottom: -3px
+                content: ''
+                height: 1.5px
+                width: 100%
+                background: #65B2E4
+                opacity: 0
+            &:hover
+                &::after
+                    animation: Opacity-dop 0.2s linear forwards
+
+        button.active
+            color: #65B2E4
+            &:hover
+                &::after
+                    animation: none
+                    opacity: 0
+
     &__menu-small
-        margin-right: 50px
+        margin-right: 40px
         +mq($min-width: 1800px)
-            margin-right: 60px
+            margin-right: 30px
         +mq($max-width: 1400px)
             margin-right: 15px
         +mq($max-width: 767px)
@@ -121,9 +151,9 @@
         ul
             display: flex
             align-items: center
-            gap: 50px
+            gap: 40px
             +mq($min-width: 1800px)
-                gap: 70px
+                gap: 60px
             +mq($max-width: 1400px)
                 gap: 15px
             .drop-menu
@@ -145,13 +175,16 @@
                         transition: all 0.2s ease
                         opacity: 1
             li
-                height: 87px
                 display: flex
                 align-items: center
                 position: relative
                 &:focus-within > ul, &:hover > ul
                     display: flex
+                    animation: Opacity-dop 0.2s linear forwards
                 a
+                    height: 87px
+                    display: flex
+                    align-items: center
                     font-weight: 700
                     font-size: 16px
                     line-height: 20px
@@ -177,6 +210,7 @@
                         width: 100%
                         position: relative
                         a
+                            height: auto
                             padding: 7.5px 20px
                             width: 100%
                             display: flex
@@ -242,6 +276,9 @@
         margin-right: 20px
         margin-left: 20px
         position: relative
+        +mq($min-width: 1800px)
+            margin-right: 30px
+            margin-left: 30px
         &::after
             transition: all 0.2s ease
             opacity: 0
@@ -299,7 +336,7 @@
         padding-top: 30px
         max-width: 100%
         width: 100%
-        height: 645px
+        height: auto
         z-index: 20
         position: absolute
         top: -100vh
@@ -310,6 +347,9 @@
         overflow: hidden
         transition: left 1s 1s
         display: flex
+        padding-bottom: 80px
+        +mq($min-width: 1800px)
+            padding-left: 200px
         +mq($max-width: 767px)
             height: auto
             overflow-y: scroll
@@ -319,6 +359,9 @@
         .flex
             margin-top: 39px
             gap: 160px
+            flex-wrap: wrap
+            max-width: 815px
+            row-gap: 80px
             +mq($max-width: 767px)
                 margin-top: 0
                 flex-direction: column
@@ -333,13 +376,17 @@
             display: flex
             flex-direction: column
             gap: 80px
+            .header-social-m
+                display: none
             +mq($max-width: 767px)
                 gap: 40px
                 .full-menu__social
+                    max-width: 250px
                     margin: 0 auto
                     margin-bottom: 30px
+                    gap: 30px
         &__title,.full-menu__bottom
-            font-family: 'Bebas Neue'
+            font-family: 'BebasNeue'
             font-weight: 700
             font-size: 33px
             line-height: 33px
@@ -378,6 +425,7 @@
                         max-width: fit-content
                     &:focus-within > ul, &:hover > ul
                         display: flex
+                        animation: Opacity-dop 0.2s linear forwards
                     &:focus-within > a > svg, &:hover > a > svg
                         display: none
                         +mq($max-width: 767px)
@@ -493,6 +541,8 @@
             display: flex
             align-items: center
             gap: 10px
+            flex-wrap: wrap
+            max-width: 140px
             a
                 display: flex
                 align-items: center
@@ -506,12 +556,12 @@
                     background: #65b1e46a
                     border: 1px solid #65b1e46a
     .hide-menu
-        top: -700px
+        top: -790px
         transition: top 1s
         +mq($max-width: 767px)
             top: -1000px
         +mq($max-width: 360px)
-            top: -1110px
+            top: -1190px
     .show-menu
         top: 0px
         transition: top 1s
@@ -521,9 +571,15 @@
     max-width: 100%
     width: 100%
     top: 0
-    z-index: 9
+    z-index: 50
     opacity: 0
     animation: open-block 0.5s ease both
+    .header__language
+        left: 230px
+        +mq($min-width: 1800px)
+            left: 395px
+        +mq($max-width: 1300px)
+            left: 215px
     &::after
         content: none
     &::before
@@ -533,6 +589,8 @@
         padding-left: 20px
         align-items: center
         display: flex
+        box-shadow: 0px 0px 20px 4px rgb(0 0 0 / 15%)
+        border-radius: 0px 0px 20px 20px
         .header__tickets
             height: 33px
         .header__logo-m

@@ -16,7 +16,6 @@
             gap: 0
             row-gap: 0
             justify-content: space-between
-
         +mq($max-width: 575px)
             margin-top: 20px
             margin-bottom: 20px
@@ -46,9 +45,9 @@
             letter-spacing: 0.1em
             color: #000000
             transition: all 0.2s ease
+            transition: color 0.4s ease
             &:hover
                 background: linear-gradient(0deg, #2D7ABF, #2D7ABF), #65B2E4
-                border: 1px solid #65B2E4
                 color: white
             +mq($max-width: 575px)
                 max-width: 140px
@@ -144,8 +143,8 @@
             height: auto
             font-weight: 800
             color: white
-            font-size: 10px
-            line-height: 13px
+            font-size: 14px
+            line-height: 14px
             right: 23px
             top: -25px
             bottom: auto
@@ -178,9 +177,8 @@
             font-size: 10px
             line-height: 14px
     &__date
-        font-family: 'Hagrid'
         font-style: normal
-        font-weight: 500
+        font-weight: 700
         font-size: 22px
         line-height: 130%
         margin-bottom: -10px
@@ -207,8 +205,7 @@
             border: 2px solid #AFCA00
             +mq($max-width: 575px)
                 border: none
-            .btn::after
-                opacity: 1
+
     &__block
         display: flex
         gap: 30px
@@ -320,6 +317,9 @@
                 height: 33px
                 font-size: 10px
                 line-height: 13px
+            &:hover
+                &::after
+                    animation: Opacity-dop 0.2s linear forwards
             +mq($max-width: 575px)
                 &::after
                     opacity: 1
@@ -329,14 +329,22 @@
         gap: 30px
         margin-bottom: 30px
         justify-content: center
+        img
+            width: 30px
+            height: 30px
         +mq($max-width: 575px)
             img
+
+                width: 21px
+                height: 21px
+            .hint
                 position: absolute
                 left: 10px
                 top: 66px
-                z-index: 14
-                width: 21px
-                height: 21px
+                z-index: 15
+                &__block
+                    left: -50px
+                    top: -75px
             svg
                 position: absolute
                 right: 10px
@@ -344,6 +352,18 @@
                 z-index: 14
                 width: 21px
                 height: 21px
+    &__group-dop
+        +mq($max-width: 575px)
+            left: 0
+            top: 10px
+            z-index: 14
+            position: absolute
+            right: 0
+            margin: 0 auto
+            display: flex
+            align-items: center
+            gap: 5px
+            justify-content: center
     &__block-date
         //font-family: 'Hagrid'
         font-style: normal
@@ -354,17 +374,14 @@
         color: #000000
         margin-bottom: 15px
         +mq($max-width: 575px)
-            left: 0
-            top: 10px
-            z-index: 14
-            position: absolute
-            right: 0
-            margin: 0 auto
+
             color: white
             font-family: 'Mont'
             font-weight: 700
-            font-size: 10px
-            line-height: 13px
+            font-size: 14px
+            line-height: 14px
+            text-transform: uppercase
+            margin-bottom: 0
     &__block-time
         //font-family: 'Hagrid'
         font-style: normal
@@ -374,3 +391,11 @@
         text-align: center
         color: #000000
         margin-bottom: 30px
+        +mq($max-width: 575px)
+            margin-bottom: 0
+            color: white
+            font-family: 'Mont'
+            font-weight: 700
+            font-size: 14px
+            line-height: 14px
+            text-transform: uppercase

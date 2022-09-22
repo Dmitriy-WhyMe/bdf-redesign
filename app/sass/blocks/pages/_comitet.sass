@@ -39,28 +39,70 @@
                     margin-bottom: 0px
             +mq($max-width: 575px)
                 margin: 5px 0
+.comitet-dop
+    font-family: 'Hagrid'
+    font-style: normal
+    font-weight: 500
+    font-size: 31px
+    line-height: 130%
+    margin-top: 100px
+    margin-bottom: 30px
+    +mq($max-width: 575px)
+        margin-bottom: 20px
+        font-size: 17px
+        text-align: center
+        margin-top: 60px
+.comitet-dop-one
+    margin-top: 30px
+    +mq($max-width: 575px)
+        margin-top: 30px
+
+.group-1
+    .comitet__item
+        &:first-child
+            max-width: 100%
+            .comitet__text
+                margin-top: 0
+                position: absolute
+                left: 635px
+                bottom: 50px
+                color: white
+                display: flex
+                flex-direction: column
+                gap: 20px
+                max-width: 550px
+                width: 100%
+                +mq($min-width: 1800px)
+                    left: 775px
+                    max-width: 620px
+                +mq($max-width: 575px)
+                    position: initial
+                    color: black
+                    margin-top: 20px
+                p
+                    color: white
+                    +mq($max-width: 575px)
+                        color: black
+
 .comitet
     margin-top: 50px
     display: flex
     flex-wrap: wrap
     gap: 30px
     +mq($max-width: 575px)
-        margin-top: 20px
-        gap: 20px
+        margin-top: 0px
+        gap: 70px
     &__item
         position: relative
-        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05)
-        border-radius: 30px
         width: 100%
         max-width: calc( (100% - 30px) / 2 )
         +mq($max-width: 575px)
             max-width: 100%
-            height: calc( 100vw - 40px )
         img
             border-radius: 30px
             width: 100%
             +mq($max-width: 575px)
-                height: 100%
+                height: calc( 100vw - 40px )
                 object-fit: cover
                 border-radius: 20px
         .img-d
@@ -73,29 +115,19 @@
         .comitet__text
             left: 30px
             bottom: 30px
-            +mq($max-width: 575px)
-                left: 20px
-                bottom: 20px
-        &:first-child
-            max-width: 100%
-            .comitet__text
-                left: 635px
-                bottom: 50px
-                +mq($min-width: 1800px)
-                    left: 775px
-                +mq($max-width: 575px)
-                    left: 20px
-                    bottom: 20px
+
     &__text
-        position: absolute
-        color: white
         display: flex
         flex-direction: column
         gap: 20px
-        max-width: 550px
+        max-width: 585px
         width: 100%
+        margin-top: 30px
         +mq($min-width: 1800px)
             max-width: 620px
+        +mq($max-width: 575px)
+            margin-top: 20px
+            gap: 10px
         h4
             font-family: 'Hagrid'
             font-style: normal
@@ -111,7 +143,7 @@
             font-size: 18px
             line-height: 130%
             +mq($max-width: 575px)
-                display: none
+                font-size: 14px
         .comitet__position
             font-family: 'BebasNeue'
             font-style: normal
@@ -119,4 +151,4 @@
             font-size: 26px
             line-height: 110%
             +mq($max-width: 575px)
-                display: none
+                font-size: 16px

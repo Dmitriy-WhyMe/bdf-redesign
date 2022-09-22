@@ -19,8 +19,8 @@ var path = {
 		css: './app/css/',
 		gulpfile: './gulpfile.js',
 		js: './app/js/',
-		jsLibs: ['./app/libs/liMarquee/jquery.liMarquee.js', './app/libs/liMarquee/jquery-1.8.3.min.js'],
-		cssLibs: ['./app/libs/liMarquee/liMarquee.css'],
+		jsLibs: ['./app/libs/fancybox/dist/jquery.fancybox.min.js'],
+		cssLibs: ['./app/libs/fancybox/dist/jquery.fancybox.min.css'],
 		deleteLibs: ['./app/js/libs.js', './app/css/libs.css']
 	}
 }
